@@ -157,3 +157,21 @@ section {
     font-family: cursive;
 }
 
+
+/*Plateau*/
+
+.board {
+	
+	background-image: url(../ressources/backgroundGame.png);
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game{
+	
+    border: 1px solid #000;
+}
