@@ -53,7 +53,7 @@ public class TicTacToeServlet extends HttpServlet {
                 + "      <h2 class=\"game--status\"></h2>\r\n"
                 + "      <button id=\"buton\" class=\"game--restart\">Restart Game</button>\r\n"
                 + "    </section>\r\n"
-                + "    <script src=\"TTT.js\"></script>\r\n");
+                + "    <script src=\"./js/TTT.js\"></script>\r\n");
         out.print("<center><form name = \"FormReturnHome\" action=\"ReturnHome\" method=GET>"
                 +    "<input id=\"buton\" classe=\"return-home\"  type =\"submit\" value=\"Accueil\"  /></input>"
                 +    "</form>");

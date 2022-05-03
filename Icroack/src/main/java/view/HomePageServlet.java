@@ -36,7 +36,7 @@ public class HomePageServlet extends HttpServlet {
 				+   " alt=\"Morpion\"></div>"
 				+ 	"<h2>Bienvenue, " + session.getAttribute("playerName") + "</h2>"
 				//Nouvelle Partie
-				+	"<form name = \"FormNewGame\" action=\"ControlerNewGame\" method=GET>"
+				+	"<form name = \"FormNewGame\" action=\"Plateau.jsp\" method=GET>"
 				+	"<div class=\"formulaire\"><input id=\"buton\" classe=\"buton\"  type =\"submit\" value=\"Nouvelle partie\"/></input></div>"
 				+	"</form>"
 

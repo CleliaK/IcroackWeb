@@ -6,7 +6,7 @@ class Game {
     frog;
 
     constructor() {
-        this.SQUARE_SIZE = 100; // TAILLE CASE
+        this.SQUARE_SIZE = 10; // TAILLE CASE
         this.game = document.getElementById('game'); // Je recupere le canva
         this.ctx = this.game.getContext('2d'); // getContext me permet de dessiner
         this.frog = new Frog(0, 0, this.getSquareSize(), this.getCtx());
