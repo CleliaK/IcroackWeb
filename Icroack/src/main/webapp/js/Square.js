@@ -62,7 +62,7 @@ class Square {
     draw_square(nom) {
 
         var image = new Image();
-        image.src = "/ressources/" + nom + ".png";
+        image.src = "./ressources/" + nom + ".png";
 
         var ctx = this.getCtx();
         var posX = this.getX();

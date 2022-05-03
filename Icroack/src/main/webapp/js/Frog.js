@@ -40,7 +40,7 @@ class Frog {
     draw() {
 
         var image = new Image();
-        image.src = "/../ressources/froggy.gif";
+        image.src = "./ressources/froggy.gif";
         var ctx = this.getCtx();
         var posX = this.getX();
         var posY = this.getY();
