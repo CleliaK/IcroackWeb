@@ -173,18 +173,41 @@ section {
 /*Plateau*/
 
 .board {
-	
 	background-image: url(../ressources/backgroundGame.png);
-
 }
-#canvas {
-    display: block;
-    margin: auto;
-    width: 800px
-    
-;
-	
-}
-   
 
+#toto {
+    background: rgba(0,0, 0,0.4);
+    width: 641px;
+    height: 562px;
+    margin-top: 70px;
+    border-radius: 10px
+}
+#imgPlateau {
+	width: 200px;
+}
+#btnRollDice {
+	background:url(../ressources/rdb.gif);
+}
+
+#container {
+	display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+
+#containerDroite {
+	display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-end;
+}
+
+#containerGauche {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+}
 
