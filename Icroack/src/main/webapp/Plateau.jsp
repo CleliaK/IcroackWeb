@@ -12,30 +12,36 @@
 
 </head>
 <body class="board">
-	<div id="container">    
-	
-		<div id="containerGauche">
-			<form name="formulaire" action="ReturnHome" method="GET">
-	    		<div class=""><input id="butonReturn" class="returnHome"  type ="submit" value="Retour"></input></div>
-	    	</form>
-	    
-	    	<div class="">
-	    		<form name="btDice" action="RollDice">
-	    			<input id="imgPlateau" class="" type="image" value="de" src="./ressources/buttonRoll.png"></input>
-	    		</form></div>
-	    	<div class=""><img id="imgPlateau" src="./ressources/LabelDiceRolled%5B1%5D.png" /></div>
-	    </div>
-	    <div id="containerCentre">
-	   		<div id="toto"><canvas id="game" height = "562px" width=" 641px"></canvas></div>
-	   	</div>
-	
-		<div id="containerDroite">
-			<div class=""><img id="imgPlateau" src="./ressources/LabelChrono%5B2%5D.png" /></div>
-		</div>
+	<div id="miniGame">
+		<div id="container">    
 		
-	    <script src="./js/Frog.js"></script>
-	    <script src="./js/Square.js"></script>
-	    <script src="./js/Game.js"></script>
-	 </div>   
+			<div id="containerGauche">
+				<form name="formulaire" action="ReturnHome" method="GET">
+		    		<div class=""><input id="butonReturn" class="returnHome"  type ="submit" value="Retour"></input></div>
+		    	</form>
+		    
+		    	<div class="">
+		    		<form name="btDice" action="RollDice">
+		    			<input id="imgPlateau" class="" type="image" value="de" src="./ressources/buttonRoll.png"></input>
+		    		</form></div>
+		    	<div class=""><img id="imgPlateau" src="./ressources/LabelDiceRolled%5B1%5D.png" /></div>
+		    </div>
+		    <div id="containerCentre">
+		   		<div id="toto"><canvas id="game" height = "562px" width=" 641px"></canvas></div>
+		   	</div>
+		
+			<div id="containerDroite">
+				<form name="formulaire" action="ReturnHome" method="GET">
+		    		<div class=""></div>
+		    	</form>
+				<div class=""><img id="imgPlateau" src="./ressources/lastRoll.png" /></div>
+				<div class=""><img id="imgPlateau" src="./ressources/LabelChrono%5B2%5D.png" /></div>
+			</div>
+			
+		    <script src="./js/Frog.js"></script>
+		    <script src="./js/Square.js"></script>
+		    <script src="./js/Game.js"></script>
+		 </div>   
+	</div>
 </body>
 </html>
