@@ -200,8 +200,9 @@ section {
 #containerDroite {
 	display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-content: space-around;
-    justify-content: flex-end;
+    margin-top: 37px;
 }
 
 #containerGauche {
@@ -211,3 +212,34 @@ section {
     align-content: space-around;
 }
 
+/*QUIZZ*/
+div#question {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+#radio {
+	display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+#containerQuizz {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+}

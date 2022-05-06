@@ -57,7 +57,7 @@ public class ViewAdmin extends HttpServlet {
 	    } else if (request.getAttribute("connection")=="nonequals") {
 	        out.print("  <span class=\"refuse\"> Pseudos ne correspondent pas</span> ");
 	    } else if (request.getAttribute("connection") == "true"){
-	        out.print(" <span class=\"ok\"> Creation de compte reussie</span>");
+	        out.print(" <span class=\"ok\"> Suppression de compte réussis</span>");
 	    }
 	    
 		out.println("</form></div></body></html>");

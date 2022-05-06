@@ -1,8 +1,7 @@
 class Frog {
-    constructor(x, y, size, ctx) {
+    constructor(x, y, ctx) {
         this.x = x;
         this.y = y;
-        this.size = size;
         this.ctx = ctx;
     }
 
@@ -13,7 +12,7 @@ class Frog {
     }
 
     setX(x) {
-        this.x = this.x + x;
+        this.x = x;
     }
 
     getY() {
@@ -21,11 +20,7 @@ class Frog {
     }
 
     setY(y) {
-        this.y = this.y + y;
-    }
-
-    getSize() {
-        return this.size;
+        this.y = y;
     }
 
     getCtx() {
@@ -39,15 +34,14 @@ class Frog {
 
     draw() {
 
-        var image = new Image();
-        image.src = "./ressources/froggy.gif";
-        var ctx = this.getCtx();
-        var posX = this.getX();
-        var posY = this.getY();
+        let image = new Image();
+        image.src = "../../img/froggy.gif";
+        let ctx = this.getCtx();
+        let posX = this.getX();
+        let posY = this.getY();
         image.onload = function () {
             ctx.drawImage(image, posX, posY);
         }
-
     }
     /*---------------------- DESSIN GRENOUILLE -----------------------*/
 
@@ -56,10 +50,11 @@ class Frog {
     /*---------------------- DEPLACEMENT -----------------------*/
 
     move(x, y) {
-
         this.setX(x); // MODIFIE LA POSTION X DE LA GRENOUILLE
         this.setY(y); // MODIFIE LA POSTION Y DE LA GRENOUILLE
         this.clearCanvas(); // APPEL A LA METHODE 
+        // console.log("Position X grenouille :" + this.getX());
+        // console.log("Position Y grenouille :" + this.getY());
     }
     /*---------------------- DEPLACEMENT -----------------------*/
 
@@ -71,6 +66,7 @@ class Frog {
     }
     /*---------------- RAFRAICHIR CANVAS ----------------*/
 
+ 
     /*---------------------- DEPLACEMENT -----------------------*/
 
 }

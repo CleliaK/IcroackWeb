@@ -48,7 +48,12 @@ public class HomePageServlet extends HttpServlet {
 				//Morpion (TicTacToe)
 				+	"<form name = \"FormTTT\" action=\"tictactoe\" method=GET>"
 				+	"<div class=\"formulaire\"><input id=\"buton\" classe=\"buton\"  type =\"submit\" value=\"Morpion\"></input></div>"
-				+	"</form>");
+				+	"</form>"
+		
+				//Quizz (Quizz)
+		        +    "<form name = \"FormQuizz\" action=\"initQuizz\" method=GET>"
+		        +    "<div class=\"formulaire\"><input id=\"buton\" classe=\"buton\"  type =\"submit\" value=\"Quizz\"></input></div>"
+		        +    "</form>");
 		if(session.getAttribute("isAdmin").equals("1")) {
 			out.print("<form name = \"FormAdminButton\" action=\"ViewAdmin\" method=GET>"
 					+	"<div class=\"formulaire\"><input id=\"buton\" classe=\"buton\"  type =\"submit\" value=\"Admin\"></input></div>"

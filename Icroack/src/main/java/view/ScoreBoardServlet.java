@@ -36,7 +36,7 @@ public class ScoreBoardServlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		//Accès BDD, on va chercher les noms des joueurs et leur score et on effecture un tri par score descendant (du plus haut au plus bas)
 		try {
-			DAOIcare dao=new DAOIcare("com.mysql.cj.jdbc.Driver", "icare","root","paw*gwe-VFG1mpf*qpe");
+			DAOIcare dao=new DAOIcare("com.mysql.cj.jdbc.Driver", "icare","Icare","ctj*UTD5gfd.tgc-apw");
 			String query ="select score_game,login from player where score_game is not null order by score_game desc LIMIT 7;";
 			ResultSet scores=dao.getStatement().executeQuery(query);
 			out.print("<html><head><link href=\"styles/style.css\" rel=\"stylesheet\"></head><body class=\"accueil\"><center><table  class=\"tableau\">"
